@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vinayak Ajayan | Aspiring Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fb;--surface:#fff;--ink:#0f1c2e;--mute:#5a6b80;--line:#e1e7ef;--brand:#1d4ed8;--brand-soft:#e8efff;--on-brand:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--surface:#121c2e;--ink:#e9eef6;--mute:#9aabc0;--line:#223149;--brand:#6b9bff;--brand-soft:#16264a;--on-brand:#0b1220}}
+:root[data-theme="dark"]{--bg:#0b1220;--surface:#121c2e;--ink:#e9eef6;--mute:#9aabc0;--line:#223149;--brand:#6b9bff;--brand-soft:#16264a;--on-brand:#0b1220}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 'Plus Jakarta Sans','Segoe UI',Helvetica,Arial,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--brand);color:var(--on-brand);font-size:14px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;color:var(--mute);font-weight:600;font-size:14px}
+nav ul a:hover{color:var(--ink)}
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand);font-weight:700;font-size:13px;padding:6px 14px;border-radius:999px}
+h1{font-size:clamp(36px,6vw,58px);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin:18px 0 8px}
+.sub{font-size:20px;font-weight:600;color:var(--brand);margin:0}
+.lead{color:var(--mute);margin:20px 0 0;max-width:56ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:13px 24px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;border:1.5px solid var(--line);background:var(--surface)}
+.btn.main{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.profile{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 10px 30px -18px rgba(15,28,46,.35)}
+.avatar{width:72px;height:72px;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-weight:800;font-size:26px;margin-bottom:18px}
+.profile dl{margin:0;display:grid;gap:14px}
+.profile dt{font-size:12.5px;color:var(--mute);font-weight:600}
+.profile dd{margin:0;font-weight:600;word-break:break-word}
+.profile .open{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
+section{padding:60px 0}
+section.alt{background:var(--surface);border-block:1px solid var(--line)}
+h2{font-size:30px;letter-spacing:-.02em;font-weight:800;margin:0 0 8px}
+.intro{color:var(--mute);margin:0 0 32px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+section.alt .card{background:var(--bg)}
+.card h3{margin:0 0 14px;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--brand-soft);color:var(--brand);font-weight:600;font-size:13.5px;padding:5px 12px;border-radius:8px}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--line)}
+.tl li{position:relative;padding-bottom:30px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}
+section.alt .tl li::before{border-color:var(--surface)}
+.tl h3{margin:0;font-size:18px}
+.tl .meta{color:var(--mute);font-size:14.5px;margin:2px 0 0}
+.when{display:inline-block;font-size:13px;font-weight:700;color:var(--brand);margin-bottom:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact{text-align:center}
+.contact p{color:var(--mute);margin:0 auto 28px;max-width:52ch}
+.contact .cta{justify-content:center}
+footer{padding:28px 0 40px;text-align:center;color:var(--mute);font-size:14px}
+@media (max-width:820px){.hero .wrap,.two{grid-template-columns:1fr}.two{gap:56px}nav ul{display:none}.hero{padding-top:44px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#top"><b>VA</b>Vinayak Ajayan</a>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<span class="tag">Open to internships and entry-level roles</span>
+<h1>Vinayak Ajayan</h1>
+<p class="sub">Aspiring Software Developer | BCA Student</p>
+<p class="lead">Computer applications student with a solid foundation in programming, object-oriented concepts, data structures, databases and the software development life cycle. Working knowledge of Python, Java and SQL.</p>
+<div class="cta">
+<a class="btn main" href="mailto:vinayakajayan82@gmail.com">Contact me</a>
+<a class="btn" href="#experience">View experience</a>
+</div>
+</div>
+<aside class="profile" aria-label="Contact details">
+<div class="avatar" aria-hidden="true">VA</div>
+<dl>
+<div><dt>Location</dt><dd>Thrissur, Kerala, India</dd></div>
+<div><dt>Email</dt><dd><a href="mailto:vinayakajayan82@gmail.com">vinayakajayan82@gmail.com</a></dd></div>
+<div><dt>Phone</dt><dd><a href="tel:+919947325843">+91 99473 25843</a></dd></div>
+<div><dt>Degree</dt><dd>BCA, Bengaluru City University (2026)</dd></div>
+</dl>
+<div class="open">Seeking a role in software development or IT.</div>
+</aside>
+</div></header>
+
+<section id="about" class="alt"><div class="wrap two">
+<div>
+<h2>About</h2>
+<p class="intro" style="margin:0">I'm a BCA student with strong problem-solving and analytical skills. I want to apply my technical knowledge in a software development or IT role and keep growing through real projects and teamwork.</p>
+</div>
+<div>
+<h2>Professional skills</h2>
+<ul class="chips" style="margin-top:16px"><li>Problem-solving</li><li>Logical reasoning</li><li>Analytical thinking</li><li>Time management</li><li>Teamwork</li><li>Communication</li></ul>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Technical skills</h2>
+<p class="intro">The languages, concepts and tools I work with.</p>
+<div class="grid">
+<div class="card"><h3>Programming languages</h3><ul class="chips"><li>Python</li><li>Java</li></ul></div>
+<div class="card"><h3>Databases</h3><ul class="chips"><li>SQL</li><li>DBMS</li><li>Database querying</li></ul></div>
+<div class="card"><h3>Core computer science</h3><ul class="chips"><li>OOP</li><li>Data structures and algorithms (basic)</li><li>Operating systems</li><li>Computer networks (basic)</li></ul></div>
+<div class="card"><h3>Software development</h3><ul class="chips"><li>SDLC</li><li>Web development (basic)</li></ul></div>
+<div class="card"><h3>Tools</h3><ul class="chips"><li>Microsoft Office</li><li>AutoCAD</li></ul></div>
+</div>
+</div></section>
+
+<section id="experience" class="alt"><div class="wrap">
+<h2>Experience and projects</h2>
+<p class="intro">Hands-on work alongside my studies.</p>
+<ul class="tl">
+<li><h3>Cybersecurity intern</h3><p class="meta">GenEd Technologies</p></li>
+<li><h3>Campus Connect</h3><p class="meta">Academic project</p></li>
+</ul>
+</div></section>
+
+<section id="education"><div class="wrap two">
+<div>
+<h2>Education</h2>
+<ul class="tl" style="margin-top:28px">
+<li><span class="when">2026</span><h3>Bachelor of Computer Applications</h3><p class="meta">Bengaluru City University, Bengaluru, Karnataka</p></li>
+<li><span class="when">2023</span><h3>Higher Secondary (Class XII)</h3><p class="meta">CMS Higher Secondary School, Thrissur, Kerala</p></li>
+<li><span class="when">2021</span><h3>Secondary (Class X)</h3><p class="meta">SNS Samajam Vidyamandir, Edamuttam, Thrissur</p></li>
+</ul>
+</div>
+<div>
+<h2>Certification</h2>
+<ul class="tl" style="margin-top:28px"><li><h3>AutoCAD</h3><p class="meta">CADD SPACE</p></li></ul>
+<h2 style="margin-top:48px">Languages</h2>
+<ul class="chips" style="margin-top:16px"><li>English</li><li>Malayalam</li><li>Hindi</li></ul>
+</div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap contact">
+<h2>Let's connect</h2>
+<p>I'm available for internships and entry-level opportunities in software development and IT. Send me a message or give me a call.</p>
+<div class="cta">
+<a class="btn main" href="mailto:vinayakajayan82@gmail.com">Email me</a>
+<a class="btn" href="tel:+919947325843">+91 99473 25843</a>
+</div>
+</div></section>
+
+<footer>&copy; 2026 Vinayak Ajayan. Thrissur, Kerala, India.</footer>
+</body>
+</html>
